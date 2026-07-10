@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Sail Beyond Horizons</title>
+<meta name="description" content="Common questions about sailing experience, safety, cost, weather, and how Sail Beyond Horizons works alongside your existing care.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Sail Beyond Horizons home">
+      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><path d="M20 4 L20 26 L6 26 Z" fill="#0e6ba8"/><path d="M22 8 L34 26 L22 26 Z" fill="#1fb6a6"/><path d="M3 30 q17 8 34 0" stroke="#3aa9e0" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      Sail Beyond Horizons
+    </a>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0a2540" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav-links" id="navlinks">
+      <a href="skills.html">The Skills</a>
+      <a href="participants.html">For You</a>
+      <a href="sail-schools.html">Sail Schools</a>
+      <a href="therapists.html">Therapists</a>
+      <a href="evidence.html">Evidence</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a class="nav-cta" href="participants.html#book">Book a session</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow" style="color:#bfeef0">FAQ</p>
+    <h1>Questions, answered.</h1>
+    <p>Everything you need to know before your first sail. Don't see your question? Reach out any time.</p>
+  </div>
+</section>
+
+<!-- Banner photo — replace <figure> with: <img class="media ratio-21-9" src="faq.jpg" alt="A rigged dinghy at the dock, ready to go"> -->
+<section class="media-band" style="padding-bottom:0">
+  <div class="container">
+    <figure class="media ratio-21-9">
+      <img src="faq.svg" alt="A small sailboat by a dock on a bright morning">
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="faq">
+      <details open>
+        <summary>Do I need to know how to sail?</summary>
+        <p>No. A qualified instructor teaches you everything, and most people are handling the boat comfortably in their first session.</p>
+      </details>
+      <details>
+        <summary>Is this a replacement for therapy or medication?</summary>
+        <p>No. Sail Beyond Horizons is a complementary, skill-building experience that works best alongside your existing care. If you're in treatment, we're happy to work in support of it.</p>
+      </details>
+      <details>
+        <summary>Is it safe?</summary>
+        <p>Yes. Sailing is run by established schools with certified instructors and full safety equipment. Studies of therapeutic sailing have found strong safety records, and comfort on the water is built in from the first lesson.</p>
+      </details>
+      <details>
+        <summary>What if the weather's bad?</summary>
+        <p>Sessions are scheduled around safe sailing conditions. When the water isn't cooperating, we reschedule — reading the conditions is part of the skill.</p>
+      </details>
+      <details>
+        <summary>How much does it cost / how do I start?</summary>
+        <p>[Insert pricing and booking flow here.] To get started today, head to the booking page or email us and we'll help you set up your first session.</p>
+      </details>
+    </div>
+    <div class="center"><div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="participants.html#book">Book your first session</a></div></div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="container">
+    <h2>Wherever you are, there's a horizon worth sailing toward.</h2>
+    <div class="btn-row"><a class="btn btn-primary" href="participants.html#book">Book a session</a><a class="btn btn-ghost" href="skills.html">See the skills</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff;margin-bottom:12px"><svg width="26" height="26" viewBox="0 0 40 40" fill="none"><path d="M20 4 L20 26 L6 26 Z" fill="#3aa9e0"/><path d="M22 8 L34 26 L22 26 Z" fill="#1fb6a6"/><path d="M3 30 q17 8 34 0" stroke="#bfeef0" stroke-width="3" fill="none" stroke-linecap="round"/></svg>Sail Beyond Horizons</div><p style="color:#9fb8ca;max-width:38ch">Sailing lessons paired with licensed therapy — so the skills you build on the water become the skills you use on land.</p></div>
+      <div><h4>Explore</h4><a href="skills.html">The Skills</a><a href="participants.html">For Participants</a><a href="evidence.html">The Evidence</a><a href="faq.html">FAQ</a></div>
+      <div><h4>Get involved</h4><a href="participants.html#book">Book a session</a><a href="sail-schools.html">Partner your sail school</a><a href="therapists.html">Join as a therapist</a></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Sail Beyond Horizons. All rights reserved.</span><span>A complement to professional mental health care, not a substitute.</span></div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+</body>
+</html>
