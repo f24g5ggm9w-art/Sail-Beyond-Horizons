@@ -13,7 +13,7 @@
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html" aria-label="Sail Beyond Horizons home">
-      <svg width="30" height="30" viewBox="0 0 40 40" fill="none"><path d="M20 4 L20 26 L6 26 Z" fill="#0e6ba8"/><path d="M22 8 L34 26 L22 26 Z" fill="#1fb6a6"/><path d="M3 30 q17 8 34 0" stroke="#3aa9e0" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      <img class="brand-logo" src="logo.png" alt="Sail Beyond Horizons logo">
       Sail Beyond Horizons
     </a>
     <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
@@ -101,7 +101,7 @@
       <div><h4>Explore</h4><a href="skills.html">The Skills</a><a href="participants.html">For Participants</a><a href="evidence.html">The Evidence</a><a href="faq.html">FAQ</a></div>
       <div><h4>Get involved</h4><a href="participants.html#book">Book a session</a><a href="sail-schools.html">Partner your sail school</a><a href="therapists.html">Join as a therapist</a></div>
     </div>
-    <div class="foot-bottom"><span>© <span id="yr"></span> Sail Beyond Horizons. All rights reserved.</span><span>A complement to professional mental health care, not a substitute.</span></div>
+    <div class="foot-bottom"><span>© <span id="yr"></span> Sail Beyond Horizons. All rights reserved.</span><img class="partner-logo" src="empathy.png" alt="Powered by Empathy"></div>
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
