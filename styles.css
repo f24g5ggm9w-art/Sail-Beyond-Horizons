@@ -55,6 +55,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);bac
 .footer-logo{height:54px;width:54px;border:1px solid rgba(255,255,255,.28)}
 .partner-logo{height:66px;display:block;background:#fff;padding:8px 16px;border-radius:10px}
 .foot-bottom{align-items:center}
+.video-embed{position:relative;max-width:900px;margin:34px auto 0;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#000}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .foot-donate{color:#7fe6d3;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .foot-donate:hover{color:#fff}
 .nav-links{display:flex;gap:24px;align-items:center}
